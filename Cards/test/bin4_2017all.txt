@@ -1,0 +1,44 @@
+
+*     number of categories
+*     number of samples minus one
+*     number of nuisance parameters
+-----------------------------------------------------------------------
+shapes * * bin4_2017all.root $CHANNEL/$PROCESS $CHANNEL/$PROCESS_$SYSTEMATIC
+---------------------------------------------------------------------------------
+
+bin	Signal	
+observation	7430.0
+---------------------------------------------------------------------------------
+bin	Signal	Signal	Signal	
+
+
+process	vj	ttsig	st	
+process	1	0	3	
+rate		120.629672451	7078.06016983	143.668606989	
+---------------------------------------------------------------------------------
+
+lumi_17	lnN	1.023	1.023	1.023	
+vj_norm	lnN	1.15	-	-	
+tt_norm	lnN	-	1.1	-	
+st_norm	lnN	-	-	1.15	
+JES_17	shape	-	1	-	
+bdec_17	shape	-	1	-	
+bfrag_17	shape	-	1	-	
+btag_17	shape	-	1	-	
+elrec_17	shape	-	1	-	
+eltrg_17	shape	-	1	-	
+fs_17	shape	-	1	-	
+fsr_17	shape	-	1	-	
+hd_17	shape	-	1	-	
+isr_17	shape	-	1	-	
+ltag_17	shape	-	1	-	
+mtop_17	shape	-	1	-	
+murec_17	shape	-	1	-	
+mutrg_17	shape	-	1	-	
+prefire_17	shape	-	1	-	
+pu_17	shape	-	1	-	
+rs_17	shape	-	1	-	
+tune_17	shape	-	1	-	
+yt	param	1.	1.	[0,10]
+bin4_2017allRate	rateParam	Signal	ttsig	(0.0077633768501*(@0)^2+1.66706197662e-05*(@0)+0.975044063582)	yt
+
