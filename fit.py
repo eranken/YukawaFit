@@ -16,7 +16,7 @@ parser.add_argument('--opt',action='store', type=str, default = "--robustFit=1 -
 args = parser.parse_args()
 
 cmssw = os.environ['CMSSW_BASE']
-if "CMSSW_8_1_" not in cmssw:
+if "CMSSW_10_2_" not in cmssw:
 	print 'ENV NOT LOADED'
 	
 
@@ -25,6 +25,7 @@ command1 = 'combine -M '+args.M+' -d card.root --redefineSignalPOIs '+args.poi+'
 print 'running combine:',command1
 os.system(command1)
 
-command2 = 'python ../../diffNuisances.py --poi '+args.poi+' -a fitDiagnostics.root -g '+args.o
-print 'running diffNuisances:',command2
-os.system(command2)
+### Outdated, need to update
+#command2 = 'python ../../diffNuisances.py --poi '+args.poi+' -a fitDiagnostics.root -g '+args.o
+#print 'running diffNuisances:',command2
+#os.system(command2)
