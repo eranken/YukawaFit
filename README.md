@@ -1,7 +1,7 @@
 # YukawaFit
 # using combine to fit yukawa coupling
 
-Sample input files are provided in "Input/test/"
+Sample input files are provided in "Input/test/" for 2017 only
 To make datacards out of these, run
 
 > python makeDataCards.py --input test --year 2017 --chan all
